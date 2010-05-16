@@ -2,7 +2,7 @@ MagicDOM - a DSL for building HTML in node.js
 ===========================================
 
 More information:
-http://amix.dk/blog/post/19505#node-magic-dom-A-DSL-for-building-HTML-in-node-js
+* [node.magic_dom: A DSL for building HTML in node.js](http://amix.dk/blog/post/19505#node-magic-dom-A-DSL-for-building-HTML-in-node-js) 
 
 Example 1
 ----------
