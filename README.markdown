@@ -1,11 +1,13 @@
-node.magic_dom is a DSL for building HTML in node.js
+MagicDOM - a DSL for building HTML in node.js
+===========================================
 
 More information:
 http://amix.dk/blog/post/19505#node-magic-dom-A-DSL-for-building-HTML-in-node-js
 
+Example 1
+----------
 
-================================================================
-
+Following JS code:
     sys.puts(
         DIV({id: 'meaning', onclick: 'alert(42)'}, 
             "Meaning")
@@ -15,13 +17,16 @@ Would output:
 
     <div id="meaning" onclick="alert(42)">Meaning</div>
 
-================================================================
 
-    var link, my_template;
-    my_template = DIV(
-        link = A({href: 'http://www.spam.com'}, 'Click me!!!')
+Example 2
+----------
+
+Following JS code:
+
+    sys.puts(
+        DIV({id: 'meaning', onclick: 'alert(42)'}, 
+            "Meaning")
     )
-    sys.puts(my_template)
 
 Would output:
 
