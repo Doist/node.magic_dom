@@ -7,13 +7,13 @@ More information:
 Example 1
 ----------
 
-Following JS code:
+JS code:
     sys.puts(
         DIV({id: 'meaning', onclick: 'alert(42)'}, 
             "Meaning")
     )
 
-Would output:
+Output:
 
     <div id="meaning" onclick="alert(42)">Meaning</div>
 
@@ -21,13 +21,14 @@ Would output:
 Example 2
 ----------
 
-Following JS code:
+JS code:
 
-    sys.puts(
-        DIV({id: 'meaning', onclick: 'alert(42)'}, 
-            "Meaning")
+    var link, my_template;
+    my_template = DIV(
+        link = A({href: 'http://www.spam.com'}, 'Click me!!!')
     )
+    sys.puts(my_template)
 
-Would output:
+Output:
 
     <div><a href="http://www.spam.com">Click me!!!</a></div>
